@@ -1,7 +1,8 @@
 import random
-import my_exensions.underscore as x # ok to access _private_var
-#from my_exensions.underscore import * # fail to access _private_var
+import my_exensions.underscore as x  # ok to access _private_var
+# from my_exensions.underscore import * # fail to access _private_var
 #from my_exensions.underscore import _private_var, public_function
+
 
 def demo1():
     pass
@@ -23,20 +24,17 @@ def demo2():
 
     for _ in range(5):
         print(_)
-    
-    for _ in range(5):
-        print(random.randint(1,6))
 
+    for _ in range(5):
+        print(random.randint(1, 6))
 
 
 def demo3():
     print(x._private_var)
     print(x.public_var)
-    
+
     print(x._private_function(2, 3))
     print(x.public_function(2, 3))
-
-
 
 
 if __name__ == "__main__":

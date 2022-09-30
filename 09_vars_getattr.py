@@ -10,7 +10,7 @@ class Person:
     def ToString2(self):
         print("ToString2 ...")
         a = vars(self)
-        print(a) # return a dictionary
+        print(a)  # return a dictionary
         return ""
 
     def ToString3(self):
@@ -19,9 +19,12 @@ class Person:
         return "\n".join(s)
 
     def ToString4(self):
-        attrs = ("fname", "lname", "age") # specify attribute manually to fix the attribute order
-        s = ["ToString4 ... {:8}: {}".format(a, getattr(self, a)) for a in attrs]
+        # specify attribute manually to fix the attribute order
+        attrs = ("fname", "lname", "age")
+        s = ["ToString4 ... {:8}: {}".format(
+            a, getattr(self, a)) for a in attrs]
         return "\n".join(s)
+
 
 if __name__ == "__main__":
     p = Person("Peter", "Parker", 26)

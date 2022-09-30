@@ -6,6 +6,7 @@ def demo_immutable1():
     n = n + 4
     print("id(n) = {}, n = {}".format(id(n), n))
 
+
 def demo_immutable2():
     print("\nimmutable -> same variable name, but different memory address")
     print("immutable of string")
@@ -13,7 +14,7 @@ def demo_immutable2():
     print("id(s) = {}, s = {}".format(id(s), s))
     s += "bow"
     print("id(s) = {}, s = {}".format(id(s), s))
-    
+
 
 def demo_mutable():
     print("\nmutable -> same memory address")
@@ -31,6 +32,7 @@ def demo_mutable():
     q.append("sunshine")
     print("id(p) = {}, p = {}".format(id(p), p))
     print("id(q) = {}, q = {}".format(id(q), q))
+
 
 if __name__ == "__main__":
     demo_immutable1()

@@ -8,4 +8,3 @@ if __name__ == "__main__":
 
     a = medal.Athlete()
     b = md.Athlete()
-    

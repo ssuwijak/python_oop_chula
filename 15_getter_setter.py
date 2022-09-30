@@ -1,4 +1,4 @@
-class PersonJavaStyle:
+class Person_JavaStyle:
     def __init__(self, fname, lname, blood) -> None:
         self.fname = fname
         self.lname = lname
@@ -8,7 +8,7 @@ class PersonJavaStyle:
     def getBlood(self):
         return self._blood
 
-    def setBlood(self, value):
+    def setBlood(self, value):  # method .. not property
         value = value.upper().strip()
 
         if value in ["A", "B", "AB", "O"]:
@@ -20,7 +20,7 @@ class PersonJavaStyle:
         return "{} {}, blood group: {}".format(self.fname, self.lname, self._blood)
 
 
-class PersonPythonStyle:
+class Person_PythonStyle:
     def __init__(self, fname, lname, blood) -> None:
         self.fname = fname
         self.lname = lname
@@ -52,10 +52,10 @@ class PersonPythonStyle:
 
 
 if __name__ == "__main__":
-    p1 = PersonJavaStyle("Peter", "Parker1", "A")
-    p1.setBlood("O")
+    p1 = Person_JavaStyle("Peter", "Parker1", "A")
+    p1.setBlood("O")  # method .. not property
     print(p1)
 
-    p2 = PersonPythonStyle("xpeter", "Parker2", "A")
+    p2 = Person_PythonStyle("xpeter", "Parker2", "A")
     p2.Blood = "b"
     print(p2)

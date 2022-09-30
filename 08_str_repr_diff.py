@@ -6,11 +6,11 @@ if __name__ == "__main__":
     th.ToString()
 
     # create a new list
-    m = [ 
-            Medal("indonesia", 3, 6, 14),
-            Medal("malaysia", 2, 3, 10),
-            Medal("myanmar", 1, 7, 15)
-        ]
+    m = [
+        Medal("indonesia", 3, 6, 14),
+        Medal("malaysia", 2, 3, 10),
+        Medal("myanmar", 1, 7, 15)
+    ]
 
     for c in m:
         print(c)

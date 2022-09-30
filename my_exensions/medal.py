@@ -12,7 +12,7 @@ class Medal:
         return a + b
 
     def __str__(self):
-        return "country: {:20} got {:.1f} totally.".format(self.country,self.total())
+        return "country: {:20} got {:.1f} totally.".format(self.country, self.total())
 
     def ToString(self):
         return print(self)
@@ -22,9 +22,8 @@ class Medal:
         # if __str__ exists, it uses the __str__ first
         # this sample returns tuple in repr() function
         return "{}{}".format(self.__class__.__name__,
-            repr((self.country, self.gold, self.silver, self.bronze)))
+                             repr((self.country, self.gold, self.silver, self.bronze)))
 
-        
 
 class Athlete:
     def __init__(self) -> None:

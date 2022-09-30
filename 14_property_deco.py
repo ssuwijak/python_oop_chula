@@ -7,8 +7,8 @@ class Student:
 
     def full_name(self):    # function or method
         return "{} {}".format(self.fname, self.lname)
-    
-    @property # apply property decorator and the next like a method
+
+    @property  # apply property decorator and the next like a method
     def full_name2(self):   # property
         return "{} {}".format(self.fname, self.lname)
 
@@ -16,9 +16,9 @@ class Student:
     def short_name(self):
         return "{}.{}".format(self.fname, self.lname[:1])
 
+
 if __name__ == "__main__":
     a = Student("361016003", "John", "Mayer")
     print(a.full_name())
     print(a.full_name2)
     print(a.short_name)
-
