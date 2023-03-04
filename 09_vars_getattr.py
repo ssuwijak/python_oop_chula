@@ -10,7 +10,7 @@ class Person:
     def ToString2(self):
         print("ToString2 ...")
         a = vars(self)
-        print(a)  # return a dictionary
+        print(a)  # return a dictionary  key=attribute value=its value
         return ""
 
     def ToString3(self):

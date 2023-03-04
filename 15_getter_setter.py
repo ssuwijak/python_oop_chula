@@ -1,3 +1,5 @@
+# Python style is after Java Style
+
 class Person_JavaStyle:
     def __init__(self, fname, lname, blood) -> None:
         self.fname = fname

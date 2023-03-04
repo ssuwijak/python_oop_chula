@@ -19,6 +19,6 @@ class Student:
 
 if __name__ == "__main__":
     a = Student("361016003", "John", "Mayer")
-    print(a.full_name())
-    print(a.full_name2)
-    print(a.short_name)
+    print(a.full_name())  # requires () due to it is a function/method
+    print(a.full_name2)  # no () at the end, due to it is a property
+    print(a.short_name)  # no () at the end, due to it is a property
